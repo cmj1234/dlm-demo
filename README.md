@@ -19,9 +19,9 @@
 
 # redis-dlm redis 实现分布式锁例子
 
-setNX()：SET if Not eXists(如果不存在，则 SET),若键 key 已经存在， 则 SETNX 命令不做任何动作,返回值：命令在设置成功时返回 1 ，设置失败时返回 0<br>
+setNX()：SET if Not eXists(如果不存在，则 SET),若键key已经存在， 则SETNX命令不做任何动作,返回值：命令在设置成功时返回1，设置失败时返回0<br>
 
-getSet()：键 key 的值设为 value ，并返回键 key 在被设置之前的旧的value，返回值：如果键key没有旧值， 也即是说，键 key 在被设置之前并不存在，那么命令返回 nil,当键 key 存在但不是字符串类型时，命令返回一个错误。<br>
+getSet()：键key的值设为 value ，并返回键key在被设置之前的旧的value，返回值：如果键key没有旧值，也即是说，键key在被设置之前并不存在，那么命令返回nil,当键key存在但不是字符串类型时，命令返回一个错误。<br>
 
 
 <a href="https://blog.csdn.net/dazou1/article/details/88088223">大致流程</a>
